@@ -1,0 +1,61 @@
+.authorized-block-mobile {
+    display: none;
+}
+
+/* @media screen and (max-width: 768px) { */
+@media screen and (max-width: 1150px) {
+    .authorized-block-mobile {
+        display: block;
+    }
+
+    .top-links li a.settings {
+        margin-top: 36px;
+    }
+
+    .top-links li a.sign-out {
+        margin-bottom: 44px;
+    }
+
+    .top-links li a.settings:before {
+        background: url(/icons/settings-black.svg) no-repeat center center;
+    }
+
+    .top-links li a.notification:before {
+        background: url(/icons/notifications-black.svg) no-repeat center center;
+    }
+
+    .top-links li a.sign-out:before {
+        background: url(/icons/login-black.svg) no-repeat center center;
+    }
+    .top-links li a.sign-out:after {
+        content: none;
+    }
+
+
+    .top-links li a.nav-button-demo {
+        color: var(--color-white);
+        background-color: var(--color-blue);
+    }
+
+    .top-links li a.nav-button {
+        margin-bottom: 32px;
+        color: var(--color-white);
+        background-color: var(--subscribe-btn-color);
+    }
+
+    .top-links li a.nav-button,
+    .top-links li a.nav-button-demo {
+        justify-content: center;
+    }
+
+    .top-links li a.nav-button-demo:before,
+    .top-links li a.nav-button:before,
+    .top-links li a.nav-button-demo:after,
+    .top-links li a.nav-button:after {
+        content: none;
+    }
+
+    .not-authorized-user .authorized-block-mobile {
+        display: none;
+    }
+}

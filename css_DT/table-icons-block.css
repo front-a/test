@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.table-icons-block {
+  display: flex;
+  padding: 5px 10px 0 10px;
+}
+
+.table-icons-block.mobile-only {
+  display: none;
+}
+
+.table-icons-block > *:not(:last-child) {
+  margin-right: 4px;
+}
+
+.table-icons-block .icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  border: 1px solid var(--dropdown-item-hover);
+  background-color: var(--color-white);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.table-icons-block .icon .icon-active {
+  display: none;
+}
+
+.table-icons-block .icon:hover:not(.active) {
+  border-color: var(--color-blue);
+}
+
+.table-icons-block .icon.active {
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+}
+
+.table-icons-block .icon.active .icon-active {
+  display: initial;
+}
+
+.table-icons-block .icon.active img:not(.icon-active) {
+  display: none;
+}
+
+.table-icons-block .icon img {
+  width: 100%;
+  height: 100%;
+  max-width: 21px;
+}
+
+.select-commodity .ui-selectmenu-button.ui-button,
+.select-year .ui-selectmenu-button.ui-button {
+  padding: 4px 4px 4px 23px;
+  border-color: var(--dropdown-item-hover);
+}
+
+.table-icons-block
+  .custom-select
+  .ui-selectmenu-button-open
+  .ui-selectmenu-text {
+  font-weight: 400;
+}
+
+.select-commodity .ui-selectmenu-button.ui-button:hover,
+.select-commodity .ui-selectmenu-button.ui-button.ui-selectmenu-button-open,
+.select-year .ui-selectmenu-button.ui-button:hover,
+.select-year .ui-selectmenu-button.ui-button.ui-selectmenu-button-open {
+  border-color: var(--color-blue);
+}
+
+.select-year .ui-selectmenu-button.ui-button {
+  width: 72px;
+}
+
+.select-commodity .ui-selectmenu-button.ui-button {
+  width: 115px;
+}
+
+.select-commodity.custom-select .ui-button .ui-icon,
+.select-year.custom-select .ui-button .ui-icon {
+  right: 0;
+}
+
+.select-commodity .ui-selectmenu-text,
+.select-year .ui-selectmenu-text {
+  font-size: 12px;
+  font-weight: 400;
+  text-overflow: initial;
+  margin: 0;
+}
+
+.select-commodity.custom-select .ui-selectmenu-button-open .ui-selectmenu-text,
+.select-year.custom-select .ui-selectmenu-button-open .ui-selectmenu-text {
+  font-size: 12px;
+}
+
+.select-year .ui-button:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 3px;
+  background: url("../icons/calendar.svg") no-repeat center;
+  background-size: contain;
+}
+
+.select-commodity .ui-button:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  left: 4px;
+  background: url("../icons/filter.svg") no-repeat center;
+  background-size: contain;
+}
+
+.select-file .ui-selectmenu-button.ui-button {
+  width: 24px;
+  height: 24px;
+}
+
+.select-file .ui-button:before {
+  content: url("../icons/download.svg");
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.select-file .ui-selectmenu-text {
+  display: none;
+}
+.select-file .ui-selectmenu-icon {
+  display: none;
+}
+
+.select-file.custom-select .ui-button.ui-selectmenu-button-open,
+.select-file.custom-select .ui-selectmenu-button:hover {
+  border: 1px solid var(--table-border-color);
+  background: var(--table-border-color);
+}
+
+/* @media screen and (max-width: 768px) { */
+@media screen and (max-width: 1150px) {
+/* @media screen and (max-width: 1200px) { */
+  .table-icons-block.mobile-only {
+    display: flex;
+  }
+
+  .table-icons-block {
+    justify-content: space-between;
+    gap: 4px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    background-color: var(--color-white);
+    border-radius: 12px;
+  }
+
+  .table-icons-block .custom-select,
+  .table-icons-block .icon {
+    flex-grow: 1;
+    height: 33px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .table-icons-block .icon {
+    padding: 3px;
+  }
+
+  .select-commodity .ui-selectmenu-button.ui-button,
+  .select-year .ui-selectmenu-button.ui-button {
+    width: 100%;
+    padding: 8px 14px 8px 24px;
+  }
+
+  #commodityOptions-menu div.ui-menu-item-wrapper,
+  #yearsOptions-menu div.ui-menu-item-wrapper,
+  .select-commodity.custom-select
+    .ui-selectmenu-button-open
+    .ui-selectmenu-text,
+  .select-year.custom-select .ui-selectmenu-button-open .ui-selectmenu-text,
+  .select-commodity .ui-selectmenu-text,
+  .select-year .ui-selectmenu-text {
+    font-size: 13px;
+  }
+
+  .search-results-table .table-icons-block {
+    display: none;
+  }
+  .table-icons-block .icon:hover:not(.active) {
+    border-color: var(--dropdown-item-hover);
+  }
+
+  .select-year .ui-button:before {
+    width: 21px;
+    min-width: 21px;
+    height: 21px;
+    min-height: 21px;
+  }
+  
+  .select-commodity .ui-button:before {
+    width: 17px;
+    min-width: 17px;
+    height: 21px;
+    min-height: 21px;
+  }
+}
