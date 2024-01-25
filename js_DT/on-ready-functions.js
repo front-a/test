@@ -45,3 +45,15 @@ const debounce = function (fn, time) {
     timeout = setTimeout(functionCall, time);
   };
 };
+
+$.fn.exists = function () {
+  return this.length !== 0;
+};
+
+$(window).resize(function(){
+  let $searchResultsContainer = $('.search-results-container');
+
+  if ($searchResultsContainer.exists()) {
+    $searchResultsContainer[0].scrollLeft = 0;
+  }
+});
