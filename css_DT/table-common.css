@@ -44,6 +44,7 @@
   left: 0;
   /*background: var(--color-white);*/
   background-color: var(--table-main-background);
+  width: 175px;
 }
 
 .search-results-table thead .asset-content {
@@ -55,6 +56,9 @@
 }
 
 .search-results-table tbody td:first-child {
+  position: sticky;
+  z-index: 1;
+  left: 0;
   background-color: var(--color-white);
 }
 

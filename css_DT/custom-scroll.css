@@ -60,3 +60,7 @@
 .search-results-container .ps__rail-y {
     opacity: 0;
 }
+
+.search-results-container .ps__rail-x {
+    margin-left: 175px;
+}
