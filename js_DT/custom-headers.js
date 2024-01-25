@@ -6,13 +6,13 @@
 			var customHeader = "<tr><th class='asset-content' rowspan='2'><div class='asset-content-wrapper'><div class='table-icons-block'>";
 			
 			customHeader += "<button type='button' id='export_buttons_2' class='icon' onclick=\"toggleActiveById('export_buttons_2')\">";
-			customHeader += "<img src=\"../../icons/download.svg\" ><img class=\"icon-active\" src=\"../../icons/download-active.svg\" ></button>";
+			customHeader += "<img src=\"./icons/download.svg\" ><img class=\"icon-active\" src=\"./icons/download-active.svg\" ></button>";
 			
 			customHeader += "<button type=\"button\" id=\"sort_table_list\" class=\"icon\" onclick=\"toggleActiveById('sort_table_list')\">";
-			customHeader += "<img src=\"../../icons/sort.svg\" ><img class=\"icon-active\" src=\"../../icons/sort-active.svg\" ></button>";
+			customHeader += "<img src=\"./icons/sort.svg\" ><img class=\"icon-active\" src=\"./icons/sort-active.svg\" ></button>";
 			
 			customHeader += "<button type=\"button\" id=\"imgRemoveBlanks\" class=\"icon\" onclick=\"toggleActiveById('imgRemoveBlanks')\">";
-			customHeader += "<img src=\"../../icons/eye.svg\" alt=\"\"><img class=\"icon-active\" src=\"../../icons/eye-active.svg\" alt=\"\"></button>";
+			customHeader += "<img src=\"./icons/eye.svg\" alt=\"\"><img class=\"icon-active\" src=\"./icons/eye-active.svg\" alt=\"\"></button>";
 			
 			customHeader += "</div>";
 			
@@ -31,7 +31,7 @@
 			customHeader += "</tr>";
 			
 			customHeader += "<tr>";
-			customHeader += "<th class=\"primary-bg\"><span class=\"linkedin-icon\"><img src=\"../../icons/linkedin.svg\"></span></th>";
+			customHeader += "<th class=\"primary-bg\"><span class=\"linkedin-icon\"><img src=\"./icons/linkedin.svg\"></span></th>";
 			customHeader += "<th class=\"secondary-bg\">Job Title</th>";
 			customHeader += "<th class=\"secondary-bg\">Name</th>";
 			customHeader += "<th class=\"secondary-bg\">Ref. Date</th>";
@@ -53,13 +53,13 @@
 			var customHeader = "<tr><th class='asset-content' rowspan='2'><div class='asset-content-wrapper'><div class='table-icons-block'>";
 			
 			customHeader += "<button type='button' id='export_buttons_2' class='icon' onclick=\"toggleActiveById('export_buttons_2')\">";
-			customHeader += "<img src=\"../../icons/download.svg\" ><img class=\"icon-active\" src=\"../../icons/download-active.svg\" ></button>";
+			customHeader += "<img src=\"./icons/download.svg\" ><img class=\"icon-active\" src=\"./icons/download-active.svg\" ></button>";
 			
 			customHeader += "<button type=\"button\" id=\"sort_table_list\" class=\"icon\" onclick=\"toggleActiveById('sort_table_list')\">";
-			customHeader += "<img src=\"../../icons/sort.svg\" ><img class=\"icon-active\" src=\"../../icons/sort-active.svg\" ></button>";
+			customHeader += "<img src=\"./icons/sort.svg\" ><img class=\"icon-active\" src=\"./icons/sort-active.svg\" ></button>";
 			
 			customHeader += "<button type=\"button\" id=\"imgRemoveBlanks\" class=\"icon\" onclick=\"toggleActiveById('imgRemoveBlanks')\">";
-			customHeader += "<img src=\"../../icons/eye.svg\" alt=\"\"><img class=\"icon-active\" src=\"../../icons/eye-active.svg\" alt=\"\"></button>";
+			customHeader += "<img src=\"./icons/eye.svg\" alt=\"\"><img class=\"icon-active\" src=\"./icons/eye-active.svg\" alt=\"\"></button>";
 			
 			customHeader += "</div>";
 		
